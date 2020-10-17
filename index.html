@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head lang="ko">
+  <meta charset = "utf-8">
+  <title>form practice</title>
+  <link rel="stylesheet" href="button.css">
+  <script src="button.js"></script>
+
+</head>
+
+<body>
+
+  <input type="button" value='night' onclick="
+  document.querySelector('body')
+  handler(this);
+    ">
+
+
+<div class="container">
+
+    <div class="head">
+      <h1 style="font-size:50px;">Welcom</h1>
+    </div>
+
+    <div class="nav">
+      <p style="font-size:18px;">Please enter your confirmation email address.</p>
+      <form>
+        Email-Address <input type="text">
+        <input type="submit" value="submit">
+      </form>
+    </div>
+
+  <div class="article">
+    <h2 style="color:purple">More Options</h2>
+      <form>
+      Please supply the following details: <br>
+        <ul>
+        <li>name <input type="text"> <input type="submit" value="submit"></li><br>
+        <li>sex</li><br>
+          <label for="male">남성</label> <input type="radio" name="agreement" id="male">
+          <label for="female">여성</label> <input type="radio" name="agreement" id="female"><br><br>
+        <li>weight <input type="text"> <input type="submit"> <label for="check1"><input type="checkbox" name="autoLogin" id="check1"> 쉿! 비밀로 하기 </label>
+        </ul>
+        <input type="submit" value="최종제출">
+      </form>
+    </div>
+
+      <div class="footer">
+        <p style="margin-top:40px">
+          Personal Password <input type="password" maxlength="8"> <input type="submit" value="확인">
+        </p>
+        <p style="margin-top:40px">
+          끝말잇기를 3회 이상 성공한 후 <span style="color:red">아래 버튼을 클릭</span>해주세요.</p>
+        </p>
+
+      <input type="button" value="끝말잇기" onclick="button_event()">
+    </p>
+  </div>
+    <input type="button" value="next" onclick="page()">
+</div>
+</body>
+</html>

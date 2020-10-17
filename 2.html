@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head lang="ko">
+  <meta charset = "utf-8">
+  <title>form practice</title>
+  <link rel="stylesheet" href="button.css">
+  <script src="button.js"></script>
+
+</head>
+
+<body>
+
+  <input type="button" value='night' onclick="
+  document.querySelector('body')
+  handler(this);
+    ">
+
+
+<div class="container">
+
+    <div class="head">
+      <h1 style="font-size:50px;">Webpage recommendation</h1>
+    </div>
+
+    <div class="nav">
+      <p style="font-size:18px;">Recommend useful web sites with helpful information</p>
+      <form>
+        Website address <input type="text">
+        <input type="submit" value="send">
+      </form>
+    </div>
+
+  <div class="article">
+    <h2 style="color:purple">About website you recommended</h2>
+      <form>
+      A description of the web site goes here.: <br>
+        <ul>
+        <li>what the website for? <input type="text"> <input type="submit" value="write"></li><br>
+        <li>Have you ever used this website?</li><br>
+          <label for="yes">YES</label> <input type="radio" name="agreement">
+          <label for="no">NO</label> <input type="radio" name="agreement"><br><br>
+
+          <p style="color:blue;">
+          If you selected 'YES' on upper question, answer the questions given below.</p>
+          <ol>
+            <li> How many times you used a week?</li>
+              <input type="radio" name="agreement"><label for="Very much">everyday</label>
+              <input type="radio" name="agreement"><label for="so so">more than 2~3times</label>
+              <input type="radio" name="agreement"><label for="nothing">rarely</label><br><br>
+            <li> What information  can you get from this website?</li>
+              <input type="text"> <input type="submit" value="write">
+          </ol>
+          </p><br>
+        </ul>
+        <input type="submit" value="최종제출">
+      </form>
+    </div>
+
+    <div class="footer">
+      <P>Please write any word for other user...</p>
+      <textarea name="content" cols="80" rows="8" style="border:1px solid black;">This website is...</textarea>
+    </div>
+    <input type="button" value="previous" onclick="page3()">  <input type="button" value="next" onclick="page4()">
+</div>
+</body>
+</html>

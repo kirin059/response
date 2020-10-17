@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head lang="ko">
+  <meta charset = "utf-8">
+  <title>form practice</title>
+  <link rel="stylesheet" href="button.css">
+  <script src="button.js"></script>
+
+</head>
+
+<body>
+  <input type="button" value='night' onclick="
+  document.querySelector('body')
+  handler(this);
+    ">
+
+
+
+<div class="container">
+
+    <div class="head">
+      <h1 style="font-size:50px;">javascript</h1>
+    </div>
+
+    <div class="nav">
+      <p style="font-size:18px;">Describe a concept of Javascript</p>
+      <form>
+        What is Javascript? <input type="text">
+        <input type="submit" value="send">
+      </form>
+    </div>
+
+  <div class="article">
+    <h2 style="color:purple">Check your level</h2>
+      <form>
+      Please supply the following details: <br>
+        <ul>
+        <li>Write how many data types are there in JS <input type="text"> <input type="submit" value="submit"></li><br>
+        <li>Have you started study JS?</li><br>
+          <label for="yes">YES, I'm studying</label> <input type="radio" name="agreement">
+          <label for="no">NO, I'm not yet</label> <input type="radio" name="agreement"><br><br>
+          <p style="color:blue;">
+          If you selected 'YES' on upper question, answer the questions given below.</p>
+          <ol>
+            <li> I know a lot about HTML</li>
+              <input type="radio" name="agreement"><label for="Very much">Very much</label>
+              <input type="radio" name="agreement"><label for="so so">so so</label>
+              <input type="radio" name="agreement"><label for="nothing">nothing</label><br><br>
+            <li> I know a lot about CSS</li>
+              <input type="radio" name="agreement"><label for="Very much">Very much</label>
+              <input type="radio" name="agreement"><label for="so so">so so</label>
+              <input type="radio" name="agreement"><label for="nothing">nothing</label>
+          </ol>
+          </p><br>
+        <li>Please write down your goals. <input type="text"> <input type="submit"> <label for="check1"><input type="checkbox" name="autoLogin" id="check1"> 쉿! 비밀로 하기 </label>
+        </ul>
+        <input type="submit" value="최종제출">
+      </form>
+    </div>
+
+      <div class="footer">
+        <p style="margin-top:40px">
+          <span style="color:red">아래 단어 5개 이상 활용하여 </span> 끝말잇기를 <strong>5회 이상 성공</strong> 해주세요.</p>
+
+          <input type="button" value="끝말잇기" onclick="button_event()">
+        </p>
+        <table style="border:1px black solid;">
+          <tr style="border:1px black solid;">
+            <td>americano</td>
+            <td>sea</td>
+            <td>raison</td>
+            <td>hair</td>
+            <td>movie</td>
+          </tr>
+          <tr style="border:1px black solid;">
+            <td>spring</td>
+            <td>royal</td>
+            <td>strawberry</td>
+            <td>money</td>
+            <td>hamberger</td>
+          </tr>
+        </table>
+  </div>
+    <input type="button" value="previous" onclick="page1()">  <input type="button" value="next" onclick="page2()">
+
+</div>
+</body>
+</html>
